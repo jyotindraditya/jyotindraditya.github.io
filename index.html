@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Jyotindraditya Rai — developer, ML enthusiast, and Android engineer.">
+    <title>Portfolio | Jyotindraditya Rai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-name">Jyotindraditya Rai</div>
+    </div>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;Dev /&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name glitch" data-text="Jyotindraditya Rai">Jyotindraditya Rai</h1>
+            <div class="hero-role">
+                <span class="role-prefix">&gt;&nbsp;</span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-tagline">Building things that live on the internet &amp; beyond.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17l9.2-9.2M17 17V7.8H7.8" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <p>I'm a <span class="highlight">Computer Science &amp; Engineering</span> undergrad at Galgotias
+                        University with a passion for building robust, elegant software. My interests span <span
+                            class="highlight">Machine Learning</span>, <span class="highlight">Android
+                            Development</span>, and <span class="highlight">System Design</span>.</p>
+                    <p>I enjoy turning complex problems into clean, efficient solutions — whether that's training neural
+                        networks to generate text, engineering Android apps with modern architecture, or designing
+                        scalable systems from the ground up.</p>
+                    <p>When I'm not coding, you'll find me exploring new tech, contributing to open source, or diving
+                        deep into DSA problems.</p>
+                </div>
+                <div class="about-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">about.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> cat info.json</p>
+                        <pre><code>{
+  "location": "Greater Noida, India",
+  "university": "Galgotias University",
+  "degree": "B.Tech CSE",
+  "year": "2023 — present",
+  "interests": [
+    "Machine Learning",
+    "Android Development",
+    "System Design",
+    "Open Source"
+  ],
+  "currently_learning": "LLMs & NLP"
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">02.</span> Skills &amp; Tools
+            </h2>
+
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">Java</span>
+                        <span class="skill-tag" data-level="90">Python</span>
+                        <span class="skill-tag" data-level="80">C</span>
+                        <span class="skill-tag" data-level="85">Kotlin</span>
+                        <span class="skill-tag" data-level="85">HTML &amp; CSS</span>
+                        <span class="skill-tag" data-level="75">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3>Frameworks &amp; Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="85">TensorFlow</span>
+                        <span class="skill-tag" data-level="85">Scikit-learn</span>
+                        <span class="skill-tag" data-level="90">NumPy</span>
+                        <span class="skill-tag" data-level="90">Pandas</span>
+                        <span class="skill-tag" data-level="80">Matplotlib</span>
+                        <span class="skill-tag" data-level="80">Jupyter Notebook</span>
+                        <span class="skill-tag" data-level="80">Google Colab</span>
+                        <span class="skill-tag" data-level="85">Android Studio</span>
+                        <span class="skill-tag" data-level="75">Gradle</span>
+                        <span class="skill-tag" data-level="80">Android SDK</span>
+                        <span class="skill-tag" data-level="75">OkHttp</span>
+                        <span class="skill-tag" data-level="80">Coroutines</span>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="skill-category reveal">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">DSA</span>
+                        <span class="skill-tag" data-level="85">DBMS</span>
+                        <span class="skill-tag" data-level="80">Linux</span>
+                        <span class="skill-tag" data-level="90">Git &amp; GitHub</span>
+                        <span class="skill-tag" data-level="80">REST APIs</span>
+                        <span class="skill-tag" data-level="75">OAuth 2.0</span>
+                        <span class="skill-tag" data-level="85">Machine Learning</span>
+                        <span class="skill-tag" data-level="80">System Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">03.</span> Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" id="project-nlp">
+                    <div class="project-card-inner">
+                        <div class="project-card-glow"></div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22" />
+                                    <path d="M8 6a4 4 0 0 1 .68-2.24" />
+                                    <path d="M16.24 3.76A4 4 0 0 1 16 6c0 .61-.14 1.19-.38 1.71" />
+                                    <circle cx="12" cy="6" r="1" />
+                                    <path d="M6 12c-1.5 0-3 .5-3 2s1.5 2 3 2c1 0 2.5-.5 3-1" />
+                                    <path d="M18 12c1.5 0 3 .5 3 2s-1.5 2-3 2c-1 0-2.5-.5-3-1" />
+                                </svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View on GitHub" aria-label="GitHub link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Character-Level Autoregressive NLP Model</h3>
+                        <p class="project-description">
+                            A character-level autoregressive language model built with TensorFlow and LSTM neural
+                            networks. Trained on raw text data to learn sequential patterns and predict the next
+                            character, demonstrating core ML and NLP concepts — sequence modeling, RNNs, supervised
+                            learning, and text generation.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>LSTM</span>
+                            <span>NLP</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" id="project-apollo">
+                    <div class="project-card-inner">
+                        <div class="project-card-glow"></div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                                    <line x1="12" y1="18" x2="12.01" y2="18" />
+                                </svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View on GitHub" aria-label="GitHub link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Apollo — Spotify Roast App</h3>
+                        <p class="project-description">
+                            A Kotlin-based Android app that authenticates via Spotify's OAuth 2.0 PKCE flow, retrieves
+                            top 50 tracks &amp; artists, and feeds the data to Gemini 2.5 Flash AI to generate
+                            hilarious, personalized roasts of your music taste. Built with MVVM, Coroutines, and
+                            RecyclerView.
+                        </p>
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>Android</span>
+                            <span>Spotify API</span>
+                            <span>Gemini AI</span>
+                            <span>OAuth 2.0</span>
+                            <span>MVVM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Placeholder for future) -->
+                <div class="project-card reveal" id="project-more">
+                    <div class="project-card-inner project-card-cta">
+                        <div class="project-card-glow"></div>
+                        <div class="project-cta-content">
+                            <div class="project-cta-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="12" y1="8" x2="12" y2="16" />
+                                    <line x1="8" y1="12" x2="16" y2="12" />
+                                </svg>
+                            </div>
+                            <h3 class="project-title">More Coming Soon</h3>
+                            <p class="project-description">I'm always building. Check back or visit my GitHub for the
+                                latest projects.</p>
+                            <a href="#" class="btn btn-outline btn-sm">View GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education/Timeline Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">04.</span> Education
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item reveal" id="edu-galgotias">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 — Present</span>
+                        <h3>B.Tech in Computer Science &amp; Engineering</h3>
+                        <p class="timeline-place">Galgotias University, Greater Noida, India</p>
+                        <p>Pursuing core CS subjects with focus on data structures, algorithms, machine learning, and
+                            software engineering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" id="edu-lamartiniere">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 — 2023</span>
+                        <h3>12th &amp; 10th (ISC / ICSE)</h3>
+                        <p class="timeline-place">La Martiniere College, Lucknow, India</p>
+                        <p>Completed secondary and senior secondary education with a strong foundation in science and
+                            mathematics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">05.</span> Get In Touch
+            </h2>
+            <div class="contact-wrapper reveal">
+                <div class="contact-text">
+                    <p>I'm currently looking for internships and collaboration opportunities. Whether you have a
+                        question, a project idea, or just want to say hello — my inbox is always open.</p>
+                    <div class="contact-socials">
+                        <a href="https://github.com/jyotindraditya" class="social-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77 5.44 5.44 0 0 0 3.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jyotindraditya-rai/" class="social-link" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="mailto:jyotindaditya@gmail.com" class="social-link" aria-label="Email" title="Email">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-image">
+                    <div class="contact-image-frame">
+                        <img src="hollow-knight.png" alt="Hollow Knight" loading="lazy">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed &amp; Built with <span class="heart">&hearts;</span> | &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
